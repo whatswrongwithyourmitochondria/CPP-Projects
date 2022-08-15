@@ -1,0 +1,4 @@
+﻿  ts_stud.cpp
+C:\Users\simmu\Documents\HSE Computer Vision\CPP\TabuMaxClique\ts_stud.cpp(86,26): warning C4018: '>': signed/unsigned mismatch
+C:\Users\simmu\Documents\HSE Computer Vision\CPP\TabuMaxClique\ts_stud.cpp(218,31): warning C4018: '<': signed/unsigned mismatch
+  TabuMaxClique.vcxproj -> C:\Users\simmu\Documents\HSE Computer Vision\CPP\TabuMaxClique\Debug\TabuMaxClique.exe

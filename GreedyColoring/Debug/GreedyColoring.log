@@ -1,0 +1,5 @@
+﻿  color_stud.cpp
+C:\Users\simmu\Documents\HSE Computer Vision\CPP\GreedyColoring\color_stud.cpp(120,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simmu\Documents\HSE Computer Vision\CPP\GreedyColoring\color_stud.cpp(140,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simmu\Documents\HSE Computer Vision\CPP\GreedyColoring\color_stud.cpp(176,27): warning C4018: '<': signed/unsigned mismatch
+  GreedyColoring.vcxproj -> C:\Users\simmu\Documents\HSE Computer Vision\CPP\GreedyColoring\Debug\GreedyColoring.exe

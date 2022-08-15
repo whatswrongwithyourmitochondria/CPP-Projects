@@ -1,0 +1,9 @@
+﻿  clique_stud.cpp
+C:\Users\simmu\Documents\HSE Computer Vision\CPP\MaxClique\clique_stud.cpp(59,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\simmu\Documents\HSE Computer Vision\CPP\MaxClique\clique_stud.cpp(95,33): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\simmu\Documents\HSE Computer Vision\CPP\MaxClique\clique_stud.cpp(102,92): warning C4244: 'argument': conversion from 'float' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+  MaxClique.vcxproj -> C:\Users\simmu\Documents\HSE Computer Vision\CPP\MaxClique\Debug\MaxClique.exe
