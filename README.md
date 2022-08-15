@@ -10,11 +10,11 @@ Here are the results obtained during the practice.
 
 ![image](https://github.com/whatswrongwithyourmitochondria/CPP-Projects/blob/master/coloring_problem_best_results.png)
 
-## 2. Maximum Clique Problem
+## 2. Maximum Clique Problem results
 
 ![image](https://github.com/whatswrongwithyourmitochondria/CPP-Projects/blob/master/max_clique_best_results.png)
 
-## 3. Maximum Clique Problem with Tabu Search
+## 3. Maximum Clique Problem with Tabu Search results
 
 ![image](https://github.com/whatswrongwithyourmitochondria/CPP-Projects/blob/master/max_clique_tabu_best_results.png)
 
