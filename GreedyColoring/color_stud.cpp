@@ -37,7 +37,7 @@ public:
                 string type;
                 line_input >> command >> type >> vertices >> edges;
                 neighbour_sets.resize(vertices);
-                colors.resize(vertices + 1);
+                colors.resize(vertices);
             }
             else
             {
