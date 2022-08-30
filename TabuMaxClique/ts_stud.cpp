@@ -143,6 +143,29 @@ public:
         return true;
     }
 
+    string PrintClique()
+    {
+        vector<int> clique;
+        clique.insert(clique.end(), best_clique.begin(), best_clique.end());
+        sort(clique.begin(), clique.end());
+        stringstream ss;
+        ss << "\"";
+        bool first_vertex = true;
+        ss << "{";
+        for (const auto& vertex : clique)
+        {
+            if (!first_vertex)
+            {
+                ss << ",";
+            }
+            ss << vertex;
+            first_vertex = false;
+        }
+        ss << "}";
+        ss << "\"";
+        return ss.str();
+    }
+
 private:
     vector<unordered_set<int>> neighbour_sets;
     vector<unordered_set<int>> non_neighbours;
@@ -278,7 +301,7 @@ private:
                         }
                     }
                 }
-                if (find(tabu_insert.begin(), tabu_insert.end(), vertex) == tabu_insert.end())
+                if (swap_1_vertex == -1 && find(tabu_insert.begin(), tabu_insert.end(), vertex) == tabu_insert.end())
                 {
                     for (int swap_candidate : swap_candidates)
                     {
@@ -374,7 +397,7 @@ int main()
     "p_hat1000-1.clq", "p_hat1000-2.clq", "p_hat1500-1.clq", "p_hat300-3.clq", "p_hat500-3.clq",
     "san1000.clq", "sanr200_0.9.clq", "sanr400_0.7.clq" };
     ofstream fout("clique_tabu.csv");
-    fout << "File,Time (sec),Clique size," << iterations << "\n";
+    fout << "File,Time (sec),Clique size,Clique vertices," << iterations << "\n";
     for (string file : files)
     {
         MaxCliqueTabuSearch problem;
@@ -387,8 +410,8 @@ int main()
             cout << "*** WARNING: incorrect clique ***\n";
             fout << "*** WARNING: incorrect clique ***\n";
         }
-        fout << file << "," << double(finish - start) / 1000 << "," << problem.GetClique().size() << '\n';
-        cout << file << "," << double(finish - start) / 1000 << "," << problem.GetClique().size() << '\n';
+        fout << file << "," << double(finish - start) / 1000 << "," << problem.GetClique().size() << "," << problem.PrintClique() << '\n';
+        cout << file << "," << double(finish - start) / 1000 << "," << problem.GetClique().size() << "," << problem.PrintClique() << '\n';
     }
     fout.close();
     return 0;
