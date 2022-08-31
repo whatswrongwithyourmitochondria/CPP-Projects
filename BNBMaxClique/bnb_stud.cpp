@@ -213,8 +213,8 @@ int main()
             cout << "*** WARNING: incorrect clique ***\n";
             fout << "*** WARNING: incorrect clique ***\n";
         }
-        fout << file << "," << heuristic_time << "," << bnb_time << "," << problem.GetClique().size() << "," << problem.PrintClique() << '\n';
-        cout << file << "," << heuristic_time << "," << bnb_time << "," << problem.GetClique().size() << "," << problem.PrintClique() << '\n';
+        fout << file << "," << heuristic_time << "," << bnb_time << "," << problem.GetClique().size() << "," << problem.PrintClique() << ",\n";
+        cout << file << "," << heuristic_time << "," << bnb_time << "," << problem.GetClique().size() << "," << problem.PrintClique() << ",\n";
     }
     return 0;
 }

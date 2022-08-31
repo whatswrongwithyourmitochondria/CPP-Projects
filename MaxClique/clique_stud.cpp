@@ -200,8 +200,8 @@ int main()
             cout << "*** WARNING: incorrect clique ***\n";
             fout << "*** WARNING: incorrect clique ***\n";
         }
-        fout << file << "," << double(finish - start) / 1000 << "," << problem.GetClique().size() << "," << problem.PrintClique() << '\n';
-        cout << file << "," << double(finish - start) / 1000 << "," << problem.GetClique().size() << "," << problem.PrintClique() << '\n';
+        fout << file << "," << double(finish - start) / 1000 << "," << problem.GetClique().size() << "," << problem.PrintClique() << ",\n";
+        cout << file << "," << double(finish - start) / 1000 << "," << problem.GetClique().size() << "," << problem.PrintClique() << ",\n";
     }
     fout.close();
     return 0;
