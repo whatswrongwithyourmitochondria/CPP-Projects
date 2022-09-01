@@ -159,22 +159,22 @@ private:
                 return;
             }
             
-            for (int vertex : colors_to_vertices[color])
+            for (int vertex_to_add : colors_to_vertices[color])
             {
-                visited_candidates[vertex] = true;
+                visited_candidates[vertex_to_add] = true;
                     
                 vector<int> new_candidates;
                 new_candidates.reserve(candidates.size());
-                for (size_t i = 0; i < candidates.size(); ++i)
+                for (int candidate : candidates)
                 {
-                    if (!visited_candidates[candidates[i]] && neighbours[vertex].count(candidates[i]))
+                    if (!visited_candidates[candidate] && neighbours[vertex_to_add].count(candidate))
                     {
-                        new_candidates.push_back(candidates[i]);
+                        new_candidates.push_back(candidate);
                     }
                 }
-                clique.insert(vertex);
+                clique.insert(vertex_to_add);
                 BnBRecursion(new_candidates);
-                clique.erase(vertex);
+                clique.erase(vertex_to_add);
             }
         }
     }
